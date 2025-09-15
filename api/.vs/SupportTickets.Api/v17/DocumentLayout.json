@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|c:\\users\\user\\downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|c:\\users\\user\\downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\workers\\outboxworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|solutionrelative:workers\\outboxworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|c:\\users\\user\\downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|solutionrelative:models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|c:\\users\\user\\downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\models\\outboxevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|solutionrelative:models\\outboxevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|c:\\users\\user\\downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\hubs\\ticketshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|solutionrelative:hubs\\ticketshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|c:\\users\\user\\downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\dtos\\ticketdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|solutionrelative:dtos\\ticketdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|c:\\users\\user\\downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|solutionrelative:controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|c:\\users\\user\\downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\data\\appdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63C32BAC-A8F0-58A4-3E8D-F2AA9178F9C0}|SupportTickets.Api.csproj|solutionrelative:data\\appdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "Models\\Ticket.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Models\\Ticket.cs",
+              "RelativeToolTip": "Models\\Ticket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T08:47:09.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T08:46:03.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TicketsController.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "Controllers\\TicketsController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:51:10.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDb.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Data\\AppDb.cs",
+              "RelativeDocumentMoniker": "Data\\AppDb.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Data\\AppDb.cs",
+              "RelativeToolTip": "Data\\AppDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:51:03.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TicketDtos.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Dtos\\TicketDtos.cs",
+              "RelativeDocumentMoniker": "Dtos\\TicketDtos.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Dtos\\TicketDtos.cs",
+              "RelativeToolTip": "Dtos\\TicketDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:50:58.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TicketsHub.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Hubs\\TicketsHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\TicketsHub.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Hubs\\TicketsHub.cs",
+              "RelativeToolTip": "Hubs\\TicketsHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:50:55.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OutboxEvent.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Models\\OutboxEvent.cs",
+              "RelativeDocumentMoniker": "Models\\OutboxEvent.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Models\\OutboxEvent.cs",
+              "RelativeToolTip": "Models\\OutboxEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:50:41.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OutboxWorker.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Workers\\OutboxWorker.cs",
+              "RelativeDocumentMoniker": "Workers\\OutboxWorker.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\support-tickets-realtime-with-orval-client\\support-tickets-realtime\\api\\Workers\\OutboxWorker.cs",
+              "RelativeToolTip": "Workers\\OutboxWorker.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:48:10.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

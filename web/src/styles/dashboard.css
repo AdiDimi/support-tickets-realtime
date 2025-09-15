@@ -1,0 +1,42 @@
+/* Responsive styles for the ticket dashboard */
+.dashboard-container {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: system-ui, sans-serif;
+  padding: 0 16px;
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    margin: 16px auto;
+    padding: 0 4px;
+  }
+  .dashboard-table {
+    font-size: 14px;
+  }
+  .dashboard-table th,
+  .dashboard-table td {
+    padding: 4px;
+  }
+  .dashboard-controls {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.dashboard-controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 8px;
+}

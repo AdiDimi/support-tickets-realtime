@@ -1,0 +1,45 @@
+version: "3.9"
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Your_strong_password123!
+    ports: ["1433:1433"]
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools18/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "Your_strong_password123!", "-C", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 30
+    volumes:
+      - mssql_data:/var/opt/mssql
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+
+  api:
+    build: ./api
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - ConnectionStrings__Default=Server=sqlserver,1433;Database=SupportTickets;User ID=sa;Password=Your_strong_password123!;TrustServerCertificate=True
+      - Redis__Connection=redis:6379
+      - DOTNET_ENVIRONMENT=Development
+      - AllowedOrigin=http://localhost:5173
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    ports: ["8080:8080"]
+
+  web:
+    build: ./web
+    environment:
+      - VITE_API_BASE=http://localhost:8080
+    depends_on:
+      - api
+    ports: ["5173:80"]
+
+volumes:
+  mssql_data:

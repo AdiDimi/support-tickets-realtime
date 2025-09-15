@@ -1,0 +1,14 @@
+# general
+.DS_Store
+node_modules
+dist
+*.user
+*.suo
+
+# dotnet
+bin/
+obj/
+
+# ide
+.vscode
+.idea
