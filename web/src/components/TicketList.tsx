@@ -14,7 +14,7 @@ export function TicketList({
   onSetPriority,
 }: TicketListProps) {
   return (
-    <table width="100%" cellPadding={8} style={{ borderCollapse: "collapse" }}>
+    <table width="100%" cellPadding={8} className="dashboard-table">
       <thead>
         <tr>
           <th align="left">Title</th>
