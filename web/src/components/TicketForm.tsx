@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { type Ticket, type CreateTicketRequest } from "../generated/client";
+import { type CreateTicketRequest } from "../generated/client";
+import { TicketPriority } from "../store/ui-store";
 
 interface TicketFormProps {
   onCreate: (payload: CreateTicketRequest) => Promise<void>;
@@ -9,7 +10,9 @@ interface TicketFormProps {
 export function TicketForm({ onCreate, isPending }: TicketFormProps) {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
-  const [priority, setPriority] = useState<Ticket["priority"]>("Medium");
+  const [priority, setPriority] = useState<TicketPriority>(
+    TicketPriority.Medium
+  );
   const [assigneeId, setAssigneeId] = useState<string>("");
   const [error, setError] = useState<string>("");
 
@@ -34,7 +37,7 @@ export function TicketForm({ onCreate, isPending }: TicketFormProps) {
       await onCreate(payload);
       setTitle("");
       setDesc("");
-      setPriority("Medium");
+      setPriority(TicketPriority.Medium);
       setAssigneeId("");
     } catch (err: any) {
       setError(err?.message || "Failed to create ticket");
@@ -64,13 +67,13 @@ export function TicketForm({ onCreate, isPending }: TicketFormProps) {
       <select
         value={priority}
         onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
-          setPriority(e.target.value as Ticket["priority"])
+          setPriority(e.target.value as TicketPriority)
         }
       >
-        <option>Low</option>
-        <option>Medium</option>
-        <option>High</option>
-        <option>Critical</option>
+        <option value={TicketPriority.Low}>Low</option>
+        <option value={TicketPriority.Medium}>Medium</option>
+        <option value={TicketPriority.High}>High</option>
+        <option value={TicketPriority.Critical}>Critical</option>
       </select>
       <select
         value={assigneeId}

@@ -11,7 +11,12 @@ import { queryClient } from "../data/queryClient";
 import { TicketForm } from "./TicketForm";
 import { TicketList } from "./TicketList";
 import "../styles/dashboard.css";
-import { useUIDispatch, useUISelector } from "../store/ui-store";
+import {
+  useUIDispatch,
+  useUISelector,
+  TicketStatus,
+  TicketPriority,
+} from "../store/ui-store";
 
 export function Dashboard() {
   useTicketRealtime();
@@ -36,15 +41,12 @@ export function Dashboard() {
     queryClient.invalidateQueries({ queryKey: ["tickets"] });
   };
 
-  const handleSetStatus = async (id: string, status: Ticket["status"]) => {
+  const handleSetStatus = async (id: string, status: TicketStatus) => {
     await updateMutation.mutateAsync({ id, payload: { status } });
     queryClient.invalidateQueries({ queryKey: ["tickets"] });
   };
 
-  const handleSetPriority = async (
-    id: string,
-    priority: Ticket["priority"]
-  ) => {
+  const handleSetPriority = async (id: string, priority: TicketPriority) => {
     await updateMutation.mutateAsync({ id, payload: { priority } });
     queryClient.invalidateQueries({ queryKey: ["tickets"] });
   };
@@ -52,9 +54,11 @@ export function Dashboard() {
   // Filter tickets ("All" disables the filter)
   const filteredTickets = (tickets || []).filter((t: Ticket) => {
     const statusMatch =
-      filterStatus === "All" ? true : t.status === filterStatus;
+      filterStatus === TicketStatus.All ? true : t.status === filterStatus;
     const priorityMatch =
-      filterPriority === "All" ? true : t.priority === filterPriority;
+      filterPriority === TicketPriority.All
+        ? true
+        : t.priority === filterPriority;
     return statusMatch && priorityMatch;
   });
 

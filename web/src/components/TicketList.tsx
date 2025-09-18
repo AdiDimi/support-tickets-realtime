@@ -1,11 +1,11 @@
 import React from "react";
 import { type Ticket } from "../generated/client";
+import { TicketStatus, TicketPriority } from "../store/ui-store";
 import { TicketRow } from "./TicketRow";
 
-interface TicketListProps {
   tickets: Ticket[];
-  onSetStatus: (id: string, status: Ticket["status"]) => Promise<void>;
-  onSetPriority: (id: string, priority: Ticket["priority"]) => Promise<void>;
+  onSetStatus: (id: string, status: TicketStatus) => Promise<void>;
+  onSetPriority: (id: string, priority: TicketPriority) => Promise<void>;
 }
 
 export function TicketList({

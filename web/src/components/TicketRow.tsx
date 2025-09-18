@@ -1,10 +1,10 @@
 import React from "react";
 import { type Ticket } from "../generated/client";
+import { TicketStatus, TicketPriority } from "../store/ui-store";
 
-interface TicketRowProps {
   ticket: Ticket;
-  onSetStatus: (id: string, status: Ticket["status"]) => Promise<void>;
-  onSetPriority: (id: string, priority: Ticket["priority"]) => Promise<void>;
+  onSetStatus: (id: string, status: TicketStatus) => Promise<void>;
+  onSetPriority: (id: string, priority: TicketPriority) => Promise<void>;
 }
 
 export function TicketRow({
@@ -28,23 +28,23 @@ export function TicketRow({
         <select
           value={ticket.priority}
           onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
-            onSetPriority(ticket.id, e.target.value as Ticket["priority"])
+            onSetPriority(ticket.id, e.target.value as TicketPriority)
           }
         >
-          <option>Low</option>
-          <option>Medium</option>
-          <option>High</option>
-          <option>Critical</option>
+          <option value={TicketPriority.Low}>Low</option>
+          <option value={TicketPriority.Medium}>Medium</option>
+          <option value={TicketPriority.High}>High</option>
+          <option value={TicketPriority.Critical}>Critical</option>
         </select>
       </td>
       <td align="center">{ticket.status}</td>
       <td align="center">{assignee ? assignee.name : "Unassigned"}</td>
       <td align="center" style={{ whiteSpace: "nowrap" }}>
-        <button onClick={() => onSetStatus(ticket.id, "Open")}>Open</button>{" "}
-        <button onClick={() => onSetStatus(ticket.id, "InProgress")}>
+        <button onClick={() => onSetStatus(ticket.id, TicketStatus.Open)}>Open</button>{" "}
+        <button onClick={() => onSetStatus(ticket.id, TicketStatus.InProgress)}>
           In Progress
         </button>{" "}
-        <button onClick={() => onSetStatus(ticket.id, "Resolved")}>
+        <button onClick={() => onSetStatus(ticket.id, TicketStatus.Resolved)}>
           Resolved
         </button>
       </td>
